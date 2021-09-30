@@ -1,0 +1,14 @@
+base
+Rcpp
+RcppProgress
+redatam
+dplyr
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+stringr
+forcats
+magrittr
