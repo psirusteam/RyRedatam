@@ -1,0 +1,163 @@
+---
+title: "Manejo basico Redatam usando R"
+author: "Andrés Gutiérrez, Felipe Molina y Stalyn Guerrero"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(printr)
+```
+
+El siguiente documento presenta algunas características para el manejo de datos censales en redatam utilizando R. 
+
+Las siguientes librerias nos permiten lectura, uso y manejo de datos Redatam en R.
+
+```{r, message=FALSE, warning=FALSE}
+library(Rcpp)
+library(RcppProgress)
+library(redatam)
+library(dplyr)
+library(tidyverse)
+```
+
+Para ejemplificar el uso de estas librerías, se utilizará el conjunto de datos Redatam correspondiente al censo de panama 2010. Dicho conjunto de datos contiene la información censal en diferentes archivos de entidades. Para leer el conjunto de datos mediante la función `redata.open` se utiliza el archivo `.dicx` que se encuentra en la carpeta correspondiente.
+
+```{r}
+panama <- redatam.open("Data/CP2010PAN/BaseOriginal/PAN2010.dicx")
+```
+
+La función `redatam.entities()` permite verificar las entidades contenidas en la informacion censal, dichas entidades poseen la informacion censal correspondiente. 
+Las preguntas censales de cada entidad pueden ser verificadas mediante `redatam.variables`.
+
+```{r}
+redatam.entities(panama)
+redatam.variables(panama, "PROVIN")
+redatam.variables(panama, "PERSONA")
+```
+
+`redata.query` permite realizar un tabulado de la información censal disponible en cada entidad, para ello, utilizando la programación básica de redatam se llama a cada variable anteponiendo el nombre de la entidad. Dicha función genera de forma automática una tabla llamada `table1`, también puede ser guardada como un objeto en `R`.
+
+En el siguiente ejemplo se agrega el número de personas según sexo por provincia.
+
+```{r, results = 'hide'}
+redatam.query(panama, "freq PROVIN.PROVNOMB by PERSONA.P02SEXO")
+```
+```{r}
+names(table1)
+head(table1)
+```
+```{r, results = 'hide'}
+provincia_sexo <- redatam.query(panama, "freq PROVIN.PROVNOMB by PERSONA.P02SEXO")
+
+```
+```{r}
+names(provincia_sexo)
+head(provincia_sexo)
+```
+
+Notar que `_value` corresponde al valor que toma la variable en la base censal, mientras que `_label` corresponde al nombre de la etiqueta de dicho valor.
+
+Con la sentencia `by` podemos generar tabla con mayor cantidad de desagregaciones. Por ejemplo, la siguiente tabla muestra el número de individuos por provincia según edad quinquenal en la categoría de trabajo.
+
+```{r, results = 'hide'}
+Tabla <- redatam.query(panama, "freq PROVIN.PROVNOMB
+                                by PERSONA.EDADQUIN
+                                by RP17TRAB")
+```
+
+```{r}
+names(Tabla)
+unique(Tabla$EDADQUIN2_label)
+head(Tabla)
+
+```
+
+Como se puede apreciar en la tabla y en la verificación que se realiza, no hay conteos para edad quinquenal entre 0 y 9 años, esto se debe a que para aquel rango de edad la pregunta de trabajo se omite por lo que el conteo se realiza solo sobre los casos válidos. 
+Para hacer un conteo sobre casos no válidos (`NA`) se debe añadir la opción `tot.omit = FALSE` como se muestra en la tabla a continuación.
+
+```{r, results = 'hide'}
+Tabla <- redatam.query(panama, "freq PROVIN.PROVNOMB
+                                by PERSONA.EDADQUIN
+                                by RP17TRAB", tot.omit = FALSE)
+```
+
+```{r}
+names(Tabla)
+unique(Tabla$EDADQUIN2_label)
+head(Tabla)
+
+```
+
+Como se aprecia en la tabla, dicha opción calcula además los totales para cada una de las desagregaciones realizadas. En el caso de las etiquetas `_label` los totales y casos no válidos son etiquetados como `__tot__` y `__na__` respectivamente mientras que la etiqueta `_value` contendrá `NA`. Finalmente, la tabla añade una etiqueta `_mask` a cada una de las desagregaciones la cuál se categoriza como 1 cuando se realiza un conteo sobre el total de dicha variable, 2 cuando se realiza un conteo sobre casos no válidos de la variable y 0 en otro caso.
+Para descartar los totales y observar los conteos sobre las desagregaciones se puede filtrar mediante `_mask` o `_label `cada una de las variables escogidas como se muestra en la siguiente sintaxis.
+note que a `_label` en cada variable se antepone un número, dicho número corresponde al orden en el cuál fueron ingresadas las variables.
+
+```{r, results = 'hide'}
+Tabla <- redatam.query(panama, "freq PROVIN.PROVNOMB 
+                                by PERSONA.EDADQUIN
+                                by RP17TRAB", tot.omit = FALSE) %>%
+  filter(PROVNOMB1_label !=  "__tot__",
+         EDADQUIN2_label !=  "__tot__",
+         RP17TRAB3_label !=  "__tot__")
+```
+
+```{r}
+names(Tabla)
+head(Tabla)
+```
+
+# Ejemplo: Cálculod la tasa de ocupación por provincia
+
+Utilizando la variable de trabajo `RP17TRAB` contenida en la entidad de `PERSONA` se calcula la tabla correspondiente.
+
+```{r}
+OCUPACION <- redatam.query(panama, "freq PROVIN.PROVNOMB by PERSONA.RP17TRAB")
+head(OCUPACION)
+cbind(unique(OCUPACION$RP17TRAB2_value), unique(OCUPACION$RP17TRAB2_label))
+```
+
+De dicha tabla es posible identificar mediante `_label` aquellas etiquetas `_value` que corresponden a ocupados y desocupados. Con dicha informacion se generan nuevas columnas para identificar mediante variables dummys a la poblacion ocupada y desocupada, se renombra ademas la etiqueta de provincia.
+
+```{r}
+OCUPACION <- OCUPACION %>% transmute(
+  provin = PROVNOMB1_value,
+  ocupados = ifelse(RP17TRAB2_value %in% c(1110,1120),1,0),
+  desocupados = ifelse(RP17TRAB2_value %in% c(1211:1224),1,0),
+  value
+) 
+head(OCUPACION)
+```
+
+Con dichas nuevas columnas podemos agrupar la data para sumar la columna `value` que corresponde al conteo de los individuos en cada categoria.
+
+```{r}
+OCUPACION <- OCUPACION %>% group_by(provin, ocupados, desocupados) %>%
+  summarise(value = sum(value)) %>% as.data.frame()
+head(OCUPACION)
+```
+
+Note que al ser categorias disjuntas, la variable ocupado y desocupados no deben tomar el valor 1 de manera simultanea. Esto es posible comprobarlo en la siguiente sintaxis.
+
+```{r}
+OCUPACION %>% filter(ocupados == 1, desocupados == 1)
+```
+
+Utilizando la función `pivot_wider` de `tidyverse` pasamos las filas correspondientes a columnas de acuerdo a la llave `value` para realizar los conteos correspondientes.
+
+```{r}
+tabla <- pivot_wider(OCUPACION, names_from = c("ocupados", "desocupados"), values_from = value,
+            names_prefix = c("ocupados"))
+head(tabla)
+```
+
+finalmente podemos calcular la tasa de ocupación por provincia ponderando las respectivas columas de la tabla calculada anteriormente donde el primer digito corresponde a 1 si está ocupado y el segundo digito a 1 si está desocupado.
+
+
+```{r}
+
+tasa_ocupacion = tabla %>% transmute(provin,
+                                     tasa_ocupacion = ocupados1_0/sum(ocupados0_1 + ocupados1_0 ))
+
+head(tasa_ocupacion)
+```

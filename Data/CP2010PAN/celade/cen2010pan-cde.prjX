@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<redProject id="tempoId">
+  <namePrj>CPV2010PA_BasePublica</namePrj>
+  <label>Proyecto Censo de Población y Vivienda 2010 | Panamá</label>
+  <author>INEC - CEPAL/CELADE</author>
+  <created>20210706</created>
+  <updated>20210706</updated>
+  <workDir>.\work</workDir>
+  <resultDir>.\res</resultDir>
+  <dictionary>
+    <label>Censo de Población y Vivienda 2010 | Panamá</label>
+    <location>.\cpv2010pan-cde.dicx</location>
+  </dictionary>
+  <program>
+    <loadLastProgram>false</loadLastProgram>
+    <elementDir>
+      <label>Programas</label>
+      <location>.\progs</location>
+    </elementDir>
+  </program>
+  <selection>
+    <useSelection>false</useSelection>
+    <defaultSelection/>
+  </selection>
+  <map/>
+  <universe>
+    <useUniverse>false</useUniverse>
+    <defaultUniverse>-1</defaultUniverse>
+  </universe>
+  <tableStyle>
+    <useStyle>false</useStyle>
+    <defaultStylePointer>-1</defaultStylePointer>
+  </tableStyle>
+  <graphStyle>
+    <useStyle>false</useStyle>
+    <defaultStylePointer>-1</defaultStylePointer>
+  </graphStyle>
+</redProject>
