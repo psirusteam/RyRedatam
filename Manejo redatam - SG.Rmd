@@ -170,10 +170,11 @@ emplearemos la variable `P03EDAD`.
 ```{r}
 redatam.query(
   PAN,
-  "TABLE T_Edad AS freq
-   of PERSONA.P03EDAD
-   FILTER  PERSONA.P03EDAD > 5 AND PERSONA.P03EDAD < 20  
-   "
+  "
+   TABLE Tedad AS AREALIST OF PROVIN,
+	PERSONA.P02SEXO SEXO 
+   
+  "
 )
 
 ```
