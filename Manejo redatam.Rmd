@@ -2,9 +2,9 @@
 title: "Manejo básico de Redatam usando R"
 author: "Andrés Gutiérrez, Felipe Molina y Stalyn Guerrero"
 output:
-  word_document: default
   html_document:
     df_print: paged
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}

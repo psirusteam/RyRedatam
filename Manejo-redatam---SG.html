@@ -174,6 +174,7 @@ pre code {
 
 <div id="introducción" class="section level1">
 <h1>Introducción</h1>
+<p>El lenguaje <em>R</em> proporciona un entorno amable para trabajar con bases de datos de gran tamaño tal es el caso de los ceson, por ello es necesario estar en una permanente actualización de los nuevos paquetes que aparecen cada día. Estos paquetes se especializan en un área determinada del procesamiento de los datos, por ejemplo; la lectura de datos (readxl, haven, openxlsx), manipulación de los datos (dplyr, data.table, dtplyr), representación gráfica (ggplot2, gganimate, plotly), escritura de resultados (report, rmarkdown, DataExplorer) o interacción con los resultados (shiny). Además, la flexibilidad de <em>R</em> para interactuar con otros lenguaje de progrmación, permitió construir un conjunto de funciones que logran compilar las sintaxis TABLE y AREALIST nativas del programa <strong>redatam.</strong> Los ejemplos ilustrativos desarrollados en este documento tienen como premisa que el lector cuenta con un conocimiento básico sobre el uso de R y del software redatam.</p>
 <p>El siguiente documento presenta algunas características para el manejo de datos censales en redatam utilizando R.</p>
 </div>
 <div id="r-y-rstudio" class="section level1">
@@ -267,6 +268,133 @@ library(magrittr)</code></pre>
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["PROVNOMB1_value"],"name":[1],"type":["chr"],"align":["left"]},{"label":["PROVNOMB1_label"],"name":[2],"type":["chr"],"align":["left"]},{"label":["PROVNOMB1_mask"],"name":[3],"type":["int"],"align":["right"]},{"label":["EDADQUIN2_value"],"name":[4],"type":["int"],"align":["right"]},{"label":["EDADQUIN2_label"],"name":[5],"type":["chr"],"align":["left"]},{"label":["EDADQUIN2_mask"],"name":[6],"type":["int"],"align":["right"]},{"label":["RP17TRAB3_value"],"name":[7],"type":["int"],"align":["right"]},{"label":["RP17TRAB3_label"],"name":[8],"type":["chr"],"align":["left"]},{"label":["RP17TRAB3_mask"],"name":[9],"type":["int"],"align":["right"]},{"label":["value"],"name":[10],"type":["int"],"align":["right"]}],"data":[{"1":"BOCAS DEL TORO","2":"BOCAS DEL TORO","3":"0","4":"0","5":"0-4","6":"0","7":"NA","8":"__na__","9":"2","10":"17884","_rn_":"1"},{"1":"BOCAS DEL TORO","2":"BOCAS DEL TORO","3":"0","4":"1","5":"5-9","6":"0","7":"NA","8":"__na__","9":"2","10":"17673","_rn_":"2"},{"1":"BOCAS DEL TORO","2":"BOCAS DEL TORO","3":"0","4":"2","5":"10-14","6":"0","7":"NA","8":"__na__","9":"2","10":"10","_rn_":"3"},{"1":"BOCAS DEL TORO","2":"BOCAS DEL TORO","3":"0","4":"2","5":"10-14","6":"0","7":"1110","8":"Ocupado, trabajÃ³ la semana de referencia","9":"0","10":"198","_rn_":"4"},{"1":"BOCAS DEL TORO","2":"BOCAS DEL TORO","3":"0","4":"2","5":"10-14","6":"0","7":"1211","8":"Desocupado, trabajÃ³ antes, buscÃ³ trabajo","9":"0","10":"7","_rn_":"5"},{"1":"BOCAS DEL TORO","2":"BOCAS DEL TORO","3":"0","4":"2","5":"10-14","6":"0","7":"1212","8":"Desocupado, trabajÃ³ antes, espera noticias","9":"0","10":"4","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
+</div>
+<div id="inclusión-de-filtros-desde-redatam" class="section level2">
+<h2>Inclusión de filtros desde <code>redatam</code></h2>
+<p>En ocasiones es necesario incluir filtros en los censos antes de realizar las <code>Tablas</code> a continuación se muestra la forma de incluir estas operaciones dentro de <code>R</code> para ello emplearemos la variable <code>P07DISCA</code> , que cuenta con 9 categorías</p>
+<pre class="r"><code>redatam.query(
+  PAN,
+  &quot;TABLE T1 AS freq
+   of PERSONA.P07DISCA
+   DECIMALS 2&quot;
+)</code></pre>
+<pre><code>## 
+## 
+ Redatam process: 1%
+ Redatam process: 2%
+ Redatam process: 3%
+ Redatam process: 3%
+ Redatam process: 4%
+ Redatam process: 5%
+ Redatam process: 6%
+ Redatam process: 7%
+ Redatam process: 8%
+ Redatam process: 9%
+ Redatam process: 10%
+ Redatam process: 11%
+ Redatam process: 12%
+ Redatam process: 13%
+ Redatam process: 14%
+ Redatam process: 15%
+ Redatam process: 16%
+ Redatam process: 17%
+ Redatam process: 18%
+ Redatam process: 19%
+ Redatam process: 20%
+ Redatam process: 21%
+ Redatam process: 22%
+ Redatam process: 23%
+ Redatam process: 24%
+ Redatam process: 25%
+ Redatam process: 26%
+ Redatam process: 27%
+ Redatam process: 28%
+ Redatam process: 29%
+ Redatam process: 30%
+ Redatam process: 31%
+ Redatam process: 32%
+ Redatam process: 33%
+ Redatam process: 34%
+ Redatam process: 35%
+ Redatam process: 36%
+ Redatam process: 37%
+ Redatam process: 38%
+ Redatam process: 39%
+ Redatam process: 40%
+ Redatam process: 41%
+ Redatam process: 42%
+ Redatam process: 43%
+ Redatam process: 44%
+ Redatam process: 45%
+ Redatam process: 46%
+ Redatam process: 47%
+ Redatam process: 48%
+ Redatam process: 49%
+ Redatam process: 50%
+ Redatam process: 51%
+ Redatam process: 52%
+ Redatam process: 53%
+ Redatam process: 54%
+ Redatam process: 55%
+ Redatam process: 56%
+ Redatam process: 57%
+ Redatam process: 58%
+ Redatam process: 59%
+ Redatam process: 60%
+ Redatam process: 61%
+ Redatam process: 62%
+ Redatam process: 63%
+ Redatam process: 64%
+ Redatam process: 65%
+ Redatam process: 66%
+ Redatam process: 67%
+ Redatam process: 68%
+ Redatam process: 69%
+ Redatam process: 70%
+ Redatam process: 71%
+ Redatam process: 72%
+ Redatam process: 73%
+ Redatam process: 74%
+ Redatam process: 75%
+ Redatam process: 76%
+ Redatam process: 77%
+ Redatam process: 78%
+ Redatam process: 79%
+ Redatam process: 80%
+ Redatam process: 81%
+ Redatam process: 82%
+ Redatam process: 83%
+ Redatam process: 84%
+ Redatam process: 85%
+ Redatam process: 86%
+ Redatam process: 87%
+ Redatam process: 88%
+ Redatam process: 89%
+ Redatam process: 90%
+ Redatam process: 91%
+ Redatam process: 92%
+ Redatam process: 93%
+ Redatam process: 94%
+ Redatam process: 95%
+ Redatam process: 96%
+ Redatam process: 97%
+ Redatam process: 98%
+ Redatam process: 99%
+ Redatam process: 100%
+## tot outputs: 1
+## cols: 4
+## tot : 10</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["P07DISCA1_value"],"name":[1],"type":["int"],"align":["right"]},{"label":["P07DISCA1_label"],"name":[2],"type":["chr"],"align":["left"]},{"label":["value"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"1","2":"Ceguera","3":"21377","_rn_":"1"},{"1":"2","2":"Sordera","3":"15191","_rn_":"2"},{"1":"3","2":"Retraso mental","3":"14659","_rn_":"3"},{"1":"4","2":"ParÃ¡lisis cerebral","3":"3720","_rn_":"4"},{"1":"5","2":"Deficiencia fÃ­sica","3":"29280","_rn_":"5"},{"1":"6","2":"Problemas mentales","3":"6388","_rn_":"6"},{"1":"7","2":"Otra","3":"8721","_rn_":"7"},{"1":"8","2":"Ninguna","3":"3299438","_rn_":"8"},{"1":"9","2":"No declarada","3":"7039","_rn_":"9"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<pre class="r"><code>T1</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["P07DISCA1_value"],"name":[1],"type":["int"],"align":["right"]},{"label":["P07DISCA1_label"],"name":[2],"type":["chr"],"align":["left"]},{"label":["value"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"1","2":"Ceguera","3":"21377","_rn_":"1"},{"1":"2","2":"Sordera","3":"15191","_rn_":"2"},{"1":"3","2":"Retraso mental","3":"14659","_rn_":"3"},{"1":"4","2":"ParÃ¡lisis cerebral","3":"3720","_rn_":"4"},{"1":"5","2":"Deficiencia fÃ­sica","3":"29280","_rn_":"5"},{"1":"6","2":"Problemas mentales","3":"6388","_rn_":"6"},{"1":"7","2":"Otra","3":"8721","_rn_":"7"},{"1":"8","2":"Ninguna","3":"3299438","_rn_":"8"},{"1":"9","2":"No declarada","3":"7039","_rn_":"9"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 </div>
 </div>
 <div id="ejemplo-cálculo-de-la-tasa-de-ocupación-por-provincia" class="section level1">

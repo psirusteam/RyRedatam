@@ -4,18 +4,18 @@
     <typeType>DICX</typeType>
     <name>cpv2010pan-cde.dicx</name>
     <created>20150708</created>
-    <updated>20211006</updated>
+    <updated>20210706</updated>
     <version>
       <major>7</major>
       <minor>0</minor>
       <revision>0</revision>
       <construction>0</construction>
     </version>
-    <security>124=hv}:9;;|n|&lt;suwAx~yJIKPLTNWRQTTUUV]XY`d|n|a`bb}¡¢¨¥¨¯«³§µ©¦°§¥­µ®©»º°¾À½½±¡¢£¤¥¦§¨©°±®­µ·°</security>
+    <security>124=hv}:9;;|n|&lt;suwAx~yJIKPLTNWRQTTT\V]XY`d|n|a`bb}¡¢¨¥¨¯«³§µ©¦°§¥­µ®©»º°¾À½½±¡¢£¤¥¦§¨©°±®­µ·°</security>
   </general>
   <root>
     <name>PAN2010</name>
-    <filename>..\baseoriginal\pan20100000.ptr</filename>
+    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100000.ptr</filename>
     <tag>100</tag>
     <entity>
       <name>PROVIN</name>
@@ -23,7 +23,7 @@
       <selectable>true</selectable>
       <refCode>PROV</refCode>
       <refLabel>PROVNOMB</refLabel>
-      <filename>..\baseoriginal\pan20100001.ptr</filename>
+      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100001.ptr</filename>
       <tag>101</tag>
       <variable>
         <name>PROV</name>
@@ -32,7 +32,7 @@
         <fieldSize>2</fieldSize>
         <tag>2816</tag>
         <datasetID/>
-        <filename>..\baseoriginal\pan20100001.rbf</filename>
+        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100001.rbf</filename>
         <varDicChoice>
           <datasetType>CHR</datasetType>
           <datasetSize>2</datasetSize>
@@ -46,7 +46,7 @@
         <fieldSize>25</fieldSize>
         <tag>8</tag>
         <datasetID/>
-        <filename>..\baseoriginal\pan20008.rbf</filename>
+        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20008.rbf</filename>
         <varDicChoice>
           <datasetType>CHR</datasetType>
           <datasetSize>25</datasetSize>
@@ -117,7 +117,7 @@
           </valueLabelElement>
         </valueLabels>
         <datasetID/>
-        <filename>.\vars\dam-redcode.rbf</filename>
+        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\celade\vars\dam-redcode.rbf</filename>
         <varDicChoice>
           <datasetType>PCK</datasetType>
           <datasetSize>4</datasetSize>
@@ -130,7 +130,7 @@
         <selectable>true</selectable>
         <refCode>IDDISTRITO</refCode>
         <refLabel>DISTNOMB</refLabel>
-        <filename>..\baseoriginal\pan20100002.ptr</filename>
+        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100002.ptr</filename>
         <tag>102</tag>
         <variable>
           <name>IDDISTRITO</name>
@@ -139,7 +139,7 @@
           <fieldSize>2</fieldSize>
           <tag>2824</tag>
           <datasetID/>
-          <filename>..\baseoriginal\pan20100002.rbf</filename>
+          <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100002.rbf</filename>
           <varDicChoice>
             <datasetType>CHR</datasetType>
             <datasetSize>2</datasetSize>
@@ -153,7 +153,7 @@
           <fieldSize>25</fieldSize>
           <tag>16</tag>
           <datasetID/>
-          <filename>..\baseoriginal\pan20016.rbf</filename>
+          <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20016.rbf</filename>
           <varDicChoice>
             <datasetType>CHR</datasetType>
             <datasetSize>25</datasetSize>
@@ -480,7 +480,7 @@
             </valueLabelElement>
           </valueLabels>
           <datasetID/>
-          <filename>.\vars\dame-redcode.rbf</filename>
+          <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\celade\vars\dame-redcode.rbf</filename>
           <varDicChoice>
             <datasetType>PCK</datasetType>
             <datasetSize>11</datasetSize>
@@ -492,7 +492,7 @@
           <selectable>true</selectable>
           <refCode>CORREG</refCode>
           <refLabel>CORRNOMB</refLabel>
-          <filename>..\baseoriginal\pan20100003.ptr</filename>
+          <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100003.ptr</filename>
           <tag>103</tag>
           <variable>
             <name>CORREG</name>
@@ -501,7 +501,7 @@
             <fieldSize>2</fieldSize>
             <tag>2832</tag>
             <datasetID/>
-            <filename>..\baseoriginal\pan20100003.rbf</filename>
+            <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100003.rbf</filename>
             <varDicChoice>
               <datasetType>CHR</datasetType>
               <datasetSize>2</datasetSize>
@@ -514,7 +514,7 @@
             <fieldSize>60</fieldSize>
             <tag>24</tag>
             <datasetID/>
-            <filename>..\baseoriginal\pan20024.rbf</filename>
+            <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20024.rbf</filename>
             <varDicChoice>
               <datasetType>CHR</datasetType>
               <datasetSize>60</datasetSize>
@@ -525,7 +525,7 @@
             <selectable>true</selectable>
             <refCode>LUGPOB</refCode>
             <refLabel>LUGPNOMB</refLabel>
-            <filename>..\baseoriginal\pan20100004.ptr</filename>
+            <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100004.ptr</filename>
             <tag>104</tag>
             <variable>
               <name>LUGPOB</name>
@@ -534,7 +534,7 @@
               <fieldSize>3</fieldSize>
               <tag>2840</tag>
               <datasetID/>
-              <filename>..\baseoriginal\pan20100004.rbf</filename>
+              <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100004.rbf</filename>
               <varDicChoice>
                 <datasetType>CHR</datasetType>
                 <datasetSize>3</datasetSize>
@@ -563,7 +563,7 @@
                 </valueLabelElement>
               </valueLabels>
               <datasetID/>
-              <filename>..\baseoriginal\pan20100005.rbf</filename>
+              <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100005.rbf</filename>
               <varDicChoice>
                 <datasetType>PCK</datasetType>
                 <datasetSize>2</datasetSize>
@@ -576,7 +576,7 @@
               <fieldSize>60</fieldSize>
               <tag>32</tag>
               <datasetID/>
-              <filename>..\baseoriginal\pan20032.rbf</filename>
+              <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20032.rbf</filename>
               <varDicChoice>
                 <datasetType>CHR</datasetType>
                 <datasetSize>60</datasetSize>
@@ -587,7 +587,7 @@
               <selectable>true</selectable>
               <refCode>BARRIADA</refCode>
               <refLabel>BARRNOMB</refLabel>
-              <filename>..\baseoriginal\pan20100005.ptr</filename>
+              <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100005.ptr</filename>
               <tag>105</tag>
               <variable>
                 <name>BARRIADA</name>
@@ -596,7 +596,7 @@
                 <fieldSize>3</fieldSize>
                 <tag>2856</tag>
                 <datasetID/>
-                <filename>..\baseoriginal\pan20100006.rbf</filename>
+                <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100006.rbf</filename>
                 <varDicChoice>
                   <datasetType>CHR</datasetType>
                   <datasetSize>3</datasetSize>
@@ -609,7 +609,7 @@
                 <fieldSize>60</fieldSize>
                 <tag>40</tag>
                 <datasetID/>
-                <filename>..\baseoriginal\pan20040.rbf</filename>
+                <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20040.rbf</filename>
                 <varDicChoice>
                   <datasetType>CHR</datasetType>
                   <datasetSize>60</datasetSize>
@@ -617,7 +617,7 @@
               </variable>
               <entity>
                 <name>SEGMENTO</name>
-                <filename>..\baseoriginal\pan20100006.ptr</filename>
+                <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100006.ptr</filename>
                 <tag>106</tag>
                 <variable>
                   <name>SEGMENTO</name>
@@ -626,7 +626,7 @@
                   <fieldSize>6</fieldSize>
                   <tag>2864</tag>
                   <datasetID/>
-                  <filename>..\baseoriginal\pan20100007.rbf</filename>
+                  <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100007.rbf</filename>
                   <varDicChoice>
                     <datasetType>CHR</datasetType>
                     <datasetSize>6</datasetSize>
@@ -634,7 +634,7 @@
                 </variable>
                 <entity>
                   <name>VIVIENDA</name>
-                  <filename>..\baseoriginal\pan20100007.ptr</filename>
+                  <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100007.ptr</filename>
                   <tag>107</tag>
                   <variable>
                     <name>VIVIENDA</name>
@@ -643,7 +643,7 @@
                     <fieldSize>2</fieldSize>
                     <tag>2872</tag>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100008.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100008.rbf</filename>
                     <varDicChoice>
                       <datasetType>CHR</datasetType>
                       <datasetSize>2</datasetSize>
@@ -749,7 +749,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100009.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100009.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>5</datasetSize>
@@ -795,7 +795,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100010.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100010.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>3</datasetSize>
@@ -848,7 +848,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100011.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100011.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -893,7 +893,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100012.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100012.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>3</datasetSize>
@@ -930,7 +930,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100013.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100013.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -955,7 +955,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100014.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100014.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>14</datasetSize>
@@ -992,7 +992,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100015.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100015.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>3</datasetSize>
@@ -1041,7 +1041,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100016.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100016.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -1090,7 +1090,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100017.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100017.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -1135,7 +1135,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100018.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100018.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>3</datasetSize>
@@ -1154,7 +1154,7 @@
                     <missing>16</missing>
                     <tag>2960</tag>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100019.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100019.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>5</datasetSize>
@@ -1173,7 +1173,7 @@
                     <missing>16</missing>
                     <tag>2968</tag>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100020.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100020.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>5</datasetSize>
@@ -1238,7 +1238,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100021.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100021.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -1271,7 +1271,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100022.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100022.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -1300,7 +1300,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100023.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100023.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>2</datasetSize>
@@ -1349,7 +1349,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100024.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100024.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -1398,7 +1398,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100025.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100025.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -1417,7 +1417,7 @@
                     <missing>25</missing>
                     <tag>3016</tag>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100026.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100026.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>5</datasetSize>
@@ -1436,7 +1436,7 @@
                     <missing>25</missing>
                     <tag>3024</tag>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100027.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100027.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>5</datasetSize>
@@ -1473,7 +1473,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100028.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100028.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>3</datasetSize>
@@ -1514,7 +1514,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100029.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100029.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>3</datasetSize>
@@ -1555,7 +1555,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100030.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100030.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -1584,7 +1584,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100031.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100031.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>2</datasetSize>
@@ -1637,7 +1637,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100032.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100032.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -1670,7 +1670,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100033.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100033.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>14</datasetSize>
@@ -1711,7 +1711,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100034.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100034.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>7</datasetSize>
@@ -1760,7 +1760,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100035.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100035.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -1797,7 +1797,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100036.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100036.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>7</datasetSize>
@@ -1842,7 +1842,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100037.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100037.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>3</datasetSize>
@@ -1875,7 +1875,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100038.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100038.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -3824,7 +3824,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100039.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100039.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>14</datasetSize>
@@ -3857,7 +3857,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100040.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100040.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -8938,7 +8938,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100041.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100041.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>24</datasetSize>
@@ -8957,7 +8957,7 @@
                     <missing>10</missing>
                     <tag>3144</tag>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100042.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100042.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -9058,7 +9058,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100043.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100043.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>7</datasetSize>
@@ -9087,7 +9087,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100044.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100044.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>2</datasetSize>
@@ -9116,7 +9116,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pan20100045.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100045.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>24</datasetSize>
@@ -9200,7 +9200,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\ringrviv.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\ringrviv.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>8</datasetSize>
@@ -9276,7 +9276,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pagomen.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pagomen.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>4</datasetSize>
@@ -9356,7 +9356,7 @@
                       </valueLabelElement>
                     </valueLabels>
                     <datasetID/>
-                    <filename>..\baseoriginal\pagoluz.rbf</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pagoluz.rbf</filename>
                     <varDicChoice>
                       <datasetType>PCK</datasetType>
                       <datasetSize>8</datasetSize>
@@ -9364,7 +9364,7 @@
                   </variable>
                   <entity>
                     <name>HOGAR</name>
-                    <filename>..\baseoriginal\pan20100008.ptr</filename>
+                    <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100008.ptr</filename>
                     <tag>108</tag>
                     <variable>
                       <name>HOGA</name>
@@ -9373,7 +9373,7 @@
                       <fieldSize>1</fieldSize>
                       <tag>3176</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100046.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100046.rbf</filename>
                       <varDicChoice>
                         <datasetType>CHR</datasetType>
                         <datasetSize>1</datasetSize>
@@ -9402,7 +9402,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100047.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100047.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9431,7 +9431,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100048.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100048.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9460,7 +9460,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100049.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100049.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9489,7 +9489,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100050.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100050.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9518,7 +9518,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100051.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100051.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9547,7 +9547,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100052.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100052.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9566,7 +9566,7 @@
                       <missing>100</missing>
                       <tag>3232</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100053.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100053.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -9595,7 +9595,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100054.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100054.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9614,7 +9614,7 @@
                       <missing>100</missing>
                       <tag>3248</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100055.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100055.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -9643,7 +9643,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100056.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100056.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9662,7 +9662,7 @@
                       <missing>100</missing>
                       <tag>3264</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100057.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100057.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -9691,7 +9691,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100058.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100058.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9710,7 +9710,7 @@
                       <missing>100</missing>
                       <tag>3280</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100059.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100059.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -9739,7 +9739,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100060.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100060.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9758,7 +9758,7 @@
                       <missing>100</missing>
                       <tag>3296</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100061.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100061.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -9787,7 +9787,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100062.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100062.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9806,7 +9806,7 @@
                       <missing>100</missing>
                       <tag>3312</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100063.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100063.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -9835,7 +9835,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100064.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100064.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9864,7 +9864,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100065.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100065.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9883,7 +9883,7 @@
                       <missing>100</missing>
                       <tag>3336</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100066.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100066.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -9912,7 +9912,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100067.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100067.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9941,7 +9941,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100068.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100068.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9970,7 +9970,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100069.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100069.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -9999,7 +9999,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100070.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100070.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -10028,7 +10028,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100071.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100071.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -10057,7 +10057,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100072.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100072.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -10086,7 +10086,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100073.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100073.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>2</datasetSize>
@@ -10119,7 +10119,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100074.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100074.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>4</datasetSize>
@@ -10138,7 +10138,7 @@
                       <missing>1001</missing>
                       <tag>3408</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100075.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100075.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -10157,7 +10157,7 @@
                       <missing>10000</missing>
                       <tag>3416</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100076.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100076.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>14</datasetSize>
@@ -11142,7 +11142,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100077.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100077.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -11175,7 +11175,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100078.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100078.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>4</datasetSize>
@@ -11194,7 +11194,7 @@
                       <missing>1001</missing>
                       <tag>3440</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100079.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100079.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -11213,7 +11213,7 @@
                       <missing>10000</missing>
                       <tag>3448</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100080.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100080.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>14</datasetSize>
@@ -12198,7 +12198,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100081.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100081.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -12231,7 +12231,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100082.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100082.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>4</datasetSize>
@@ -12250,7 +12250,7 @@
                       <missing>1001</missing>
                       <tag>3472</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100083.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100083.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -12269,7 +12269,7 @@
                       <missing>10000</missing>
                       <tag>3480</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100084.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100084.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>14</datasetSize>
@@ -13254,7 +13254,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100085.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100085.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -13287,7 +13287,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100086.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100086.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>4</datasetSize>
@@ -13306,7 +13306,7 @@
                       <missing>1001</missing>
                       <tag>3504</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100087.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100087.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -13325,7 +13325,7 @@
                       <missing>10000</missing>
                       <tag>3512</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100088.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100088.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>14</datasetSize>
@@ -14310,7 +14310,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100089.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100089.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -14343,7 +14343,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100090.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100090.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>4</datasetSize>
@@ -14362,7 +14362,7 @@
                       <missing>1001</missing>
                       <tag>3536</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100091.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100091.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -14381,7 +14381,7 @@
                       <missing>10000</missing>
                       <tag>3544</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100092.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100092.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>14</datasetSize>
@@ -15366,7 +15366,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100093.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100093.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>10</datasetSize>
@@ -15385,7 +15385,7 @@
                       <missing>99</missing>
                       <tag>3560</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100094.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100094.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -15404,7 +15404,7 @@
                       <missing>100</missing>
                       <tag>3568</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100095.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100095.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -15423,7 +15423,7 @@
                       <missing>100</missing>
                       <tag>3576</tag>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100096.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100096.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>7</datasetSize>
@@ -15452,7 +15452,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100097.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100097.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>24</datasetSize>
@@ -15493,7 +15493,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\pan20100098.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100098.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>3</datasetSize>
@@ -15577,7 +15577,7 @@
                         </valueLabelElement>
                       </valueLabels>
                       <datasetID/>
-                      <filename>..\baseoriginal\ringrhog.rbf</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\ringrhog.rbf</filename>
                       <varDicChoice>
                         <datasetType>PCK</datasetType>
                         <datasetSize>8</datasetSize>
@@ -15585,7 +15585,7 @@
                     </variable>
                     <entity>
                       <name>PERSONA</name>
-                      <filename>..\baseoriginal\pan20100009.ptr</filename>
+                      <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100009.ptr</filename>
                       <tag>109</tag>
                       <variable>
                         <name>NPERSONA</name>
@@ -15594,7 +15594,7 @@
                         <fieldSize>2</fieldSize>
                         <tag>3600</tag>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100099.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100099.rbf</filename>
                         <varDicChoice>
                           <datasetType>CHR</datasetType>
                           <datasetSize>2</datasetSize>
@@ -15655,7 +15655,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100100.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100100.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -15728,7 +15728,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100101.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100101.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>5</datasetSize>
@@ -15747,7 +15747,7 @@
                         <missing>101</missing>
                         <tag>3624</tag>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100102.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100102.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>7</datasetSize>
@@ -15777,7 +15777,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100103.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100103.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>2</datasetSize>
@@ -15802,7 +15802,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100104.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100104.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>10</datasetSize>
@@ -15851,7 +15851,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100105.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100105.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -15904,7 +15904,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100106.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100106.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -15937,7 +15937,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100107.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100107.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -15970,7 +15970,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100108.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100108.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -16003,7 +16003,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100109.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100109.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -16036,7 +16036,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100110.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100110.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -16069,7 +16069,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100111.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100111.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -16102,7 +16102,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100112.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100112.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -16159,7 +16159,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100113.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100113.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -16428,7 +16428,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100114.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100114.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>7</datasetSize>
@@ -16493,7 +16493,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100115.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100115.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>7</datasetSize>
@@ -16566,7 +16566,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100116.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100116.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>5</datasetSize>
@@ -16611,7 +16611,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100117.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100117.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -16680,7 +16680,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100118.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100118.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>5</datasetSize>
@@ -18277,7 +18277,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100119.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100119.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -18314,7 +18314,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100120.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100120.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -18955,7 +18955,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100121.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100121.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -20552,7 +20552,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100122.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100122.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -20589,7 +20589,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100123.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100123.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -20622,7 +20622,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100124.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100124.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -20811,7 +20811,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100125.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100125.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>7</datasetSize>
@@ -20844,7 +20844,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100126.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100126.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -29221,7 +29221,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100127.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100127.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>14</datasetSize>
@@ -29250,7 +29250,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100128.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100128.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>2</datasetSize>
@@ -29279,7 +29279,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100129.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100129.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>2</datasetSize>
@@ -29308,7 +29308,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100130.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100130.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>2</datasetSize>
@@ -29337,7 +29337,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100131.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100131.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>2</datasetSize>
@@ -29366,7 +29366,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100132.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100132.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>3</datasetSize>
@@ -29431,7 +29431,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100133.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100133.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -29636,7 +29636,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100134.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100134.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>6</datasetSize>
@@ -40585,7 +40585,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100135.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100135.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>24</datasetSize>
@@ -42534,7 +42534,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100136.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100136.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>14</datasetSize>
@@ -42599,7 +42599,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100137.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100137.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>7</datasetSize>
@@ -42644,7 +42644,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100138.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100138.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -42669,7 +42669,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100139.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100139.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -42694,7 +42694,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100140.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100140.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -42719,7 +42719,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100141.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100141.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -42744,7 +42744,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100142.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100142.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -42769,7 +42769,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100143.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100143.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -42794,7 +42794,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100144.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100144.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -42819,7 +42819,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100145.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100145.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -42844,7 +42844,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100146.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100146.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -42941,7 +42941,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100147.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100147.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>5</datasetSize>
@@ -42966,7 +42966,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100148.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100148.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -42991,7 +42991,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100149.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100149.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -43016,7 +43016,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100150.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100150.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -43041,7 +43041,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100151.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100151.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>17</datasetSize>
@@ -43074,7 +43074,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100152.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100152.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>3</datasetSize>
@@ -43103,7 +43103,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100153.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100153.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>7</datasetSize>
@@ -43128,7 +43128,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100154.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100154.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>7</datasetSize>
@@ -43161,7 +43161,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100155.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100155.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -43194,7 +43194,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100156.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100156.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -43223,7 +43223,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100157.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100157.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>24</datasetSize>
@@ -43316,7 +43316,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100158.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100158.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>5</datasetSize>
@@ -43409,7 +43409,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100159.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100159.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>14</datasetSize>
@@ -43470,7 +43470,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100160.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100160.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>4</datasetSize>
@@ -43575,7 +43575,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100161.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100161.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>5</datasetSize>
@@ -43660,7 +43660,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100162.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100162.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>9</datasetSize>
@@ -43985,7 +43985,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100163.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100163.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>11</datasetSize>
@@ -45274,7 +45274,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100164.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100164.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>14</datasetSize>
@@ -45607,7 +45607,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100165.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100165.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>14</datasetSize>
@@ -46896,7 +46896,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100166.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100166.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>14</datasetSize>
@@ -46915,7 +46915,7 @@
                         <missing>24</missing>
                         <tag>4144</tag>
                         <datasetID/>
-                        <filename>..\baseoriginal\pan20100167.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\pan20100167.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>5</datasetSize>
@@ -46999,7 +46999,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\ringrper.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\ringrper.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>8</datasetSize>
@@ -47107,7 +47107,7 @@
                           </valueLabelElement>
                         </valueLabels>
                         <datasetID/>
-                        <filename>..\baseoriginal\edadquin.rbf</filename>
+                        <filename>v:\dat\censos\poblacion\cp2010\cp2010pan\baseoriginal\edadquin.rbf</filename>
                         <varDicChoice>
                           <datasetType>PCK</datasetType>
                           <datasetSize>8</datasetSize>
