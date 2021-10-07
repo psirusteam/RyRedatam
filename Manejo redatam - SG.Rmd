@@ -1,0 +1,269 @@
+---
+title: "Manejo básico de Redatam usando R"
+author: "Andrés Gutiérrez, Felipe Molina y Stalyn Guerrero"
+output:
+  html_document:
+    df_print: paged
+  word_document: default
+editor_options: 
+  markdown: 
+    wrap: 90
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE,
+                      cache = FALSE,
+                      fig.width=6, 
+                      fig.height=4,
+                      fig.align="center") 
+```
+
+# Introducción
+
+El lenguaje *R* proporciona un entorno amable para trabajar con bases de datos de gran
+tamaño tal es el caso de los ceson, por ello es necesario estar en una permanente
+actualización de los nuevos paquetes que aparecen cada día. Estos paquetes se especializan
+en un área determinada del procesamiento de los datos, por ejemplo; la lectura de datos
+(readxl, haven, openxlsx), manipulación de los datos (dplyr, data.table, dtplyr),
+representación gráfica (ggplot2, gganimate, plotly), escritura de resultados (report,
+rmarkdown, DataExplorer) o interacción con los resultados (shiny). Además, la flexibilidad
+de *R* para interactuar con otros lenguaje de progrmación, permitió construir un conjunto
+de funciones que logran compilar las sintaxis TABLE y AREALIST nativas del programa
+**redatam.** Los ejemplos ilustrativos desarrollados en este documento tienen como premisa
+que el lector cuenta con un conocimiento básico sobre el uso de R y del software redatam.
+
+El siguiente documento presenta algunas características para el manejo de datos censales
+en redatam utilizando R.
+
+# R y RStudio
+
+Las siguientes librerias nos permiten lectura, uso y manejo de datos Redatam en R.
+
+```{r, message=FALSE, warning=FALSE}
+library(Rcpp)
+library(RcppProgress)
+library(redatam)
+library(dplyr)
+library(tidyverse)
+library(magrittr)
+```
+
+# La librería `redatam` en `R`
+
+Para ejemplificar el uso de estas librerías, se utilizará el conjunto de datos Redatam
+correspondiente al censo de PAN 2010. Dicho conjunto de datos contiene la información
+censal en diferentes archivos de entidades. Para leer el conjunto de datos mediante la
+función `redata.open` se utiliza el archivo `.dicx` que se encuentra en la carpeta
+correspondiente.
+
+```{r}
+PAN <- redatam.open("Data/CP2010PAN/BaseOriginal/PAN2010.dicx")
+```
+
+La función `redatam.entities()` permite verificar las entidades contenidas en la
+informacion censal, dichas entidades poseen la informacion censal correspondiente. Las
+preguntas censales de cada entidad pueden ser verificadas mediante `redatam.variables`.
+
+```{r}
+redatam.entities(PAN)
+```
+
+```{r}
+redatam.variables(PAN, "PROVIN")
+```
+
+```{r}
+redatam.variables(PAN, "PERSONA")
+```
+
+`redata.query` permite realizar un tabulado de la información censal disponible en cada
+entidad, para ello, utilizando la programación básica de redatam se llama a cada variable
+anteponiendo el nombre de la entidad. Dicha función genera de forma automática una tabla
+llamada `Tabla1`, también puede ser guardada como un objeto en `R`.
+
+En el siguiente ejemplo se agrega el número de personas según sexo por provincia.
+
+```{r, results = 'hide'}
+Tabla1 <- redatam.query(PAN, 
+                        "
+                        freq PROVIN.PROVNOMB 
+                        by PERSONA.P02SEXO               
+                        "
+                        )
+```
+
+```{r}
+head(Tabla1)
+```
+
+Notar que `_value` corresponde al valor que toma la variable en la base censal, mientras
+que `_label` corresponde al nombre de la etiqueta de dicho valor.
+
+Con la sentencia `by` podemos generar tabla con mayor cantidad de desagregaciones. Por
+ejemplo, la siguiente tabla muestra el número de individuos por provincia según edad
+quinquenal en la categoría de trabajo.
+
+```{r, results = 'hide'}
+Tabla2 <- redatam.query(PAN, 
+                        "
+                        freq PROVIN.PROVNOMB   
+                        by PERSONA.EDADQUIN 
+                        by RP17TRAB
+                        "
+                        )
+```
+
+```{r}
+head(Tabla2)
+```
+
+```{r}
+names(Tabla2)
+unique(Tabla2$EDADQUIN2_label)
+```
+
+Como se puede apreciar en la tabla y en la verificación que se realiza, no hay conteos
+para edad quinquenal entre 0 y 9 años, esto se debe a que para aquel rango de edad la
+pregunta de trabajo se omite por lo que el conteo se realiza solo sobre los casos válidos.
+Para hacer un conteo sobre casos no válidos (`NA`) se debe añadir la opción
+`tot.omit = FALSE` como se muestra en la tabla a continuación.
+
+Como se aprecia en la tabla, dicha opción calcula además los totales para cada una de las
+desagregaciones realizadas. En el caso de las etiquetas `_label` los totales y casos no
+válidos son etiquetados como `__tot__` y `__na__` respectivamente mientras que la etiqueta
+`_value` contendrá `NA`. Finalmente, la tabla añade una etiqueta `_mask` a cada una de las
+desagregaciones la cuál se categoriza como 1 cuando se realiza un conteo sobre el total de
+dicha variable, 2 cuando se realiza un conteo sobre casos no válidos de la variable y 0 en
+otro caso. Para descartar los totales y observar los conteos sobre las desagregaciones se
+puede filtrar mediante `_mask` o `_label`cada una de las variables escogidas como se
+muestra en la siguiente sintaxis. note que a `_label` en cada variable se antepone un
+número, dicho número corresponde al orden en el cuál fueron ingresadas las variables.
+
+```{r, results = 'hide'}
+Tabla3 <- redatam.query(PAN, 
+                        "
+                        freq PROVIN.PROVNOMB 
+                        by PERSONA.EDADQUIN 
+                        by RP17TRAB
+                        ", 
+                        tot.omit = FALSE) %>%
+  filter(PROVNOMB1_label !=  "__tot__",
+         EDADQUIN2_label !=  "__tot__",
+         RP17TRAB3_label !=  "__tot__")
+```
+
+```{r}
+names(Tabla3)
+```
+
+```{r}
+head(Tabla3)
+```
+
+## Inclusión de filtros desde `redatam`
+
+En ocasiones es necesario incluir filtros en los censos antes de realizar las `Tablas` a
+continuación se muestra la forma de incluir estas operaciones dentro de `R` para ello
+emplearemos la variable `P03EDAD`.
+
+```{r}
+redatam.query(
+  PAN,
+  "TABLE T_Edad AS freq
+   of PERSONA.P03EDAD
+   FILTER  PERSONA.P03EDAD > 5 AND PERSONA.P03EDAD < 20  
+   "
+)
+
+```
+
+en la sintaxis de le indica a `R` que cree la Tabla `T_Edad`, con la frecuencia de
+personas que tienen edades entre 6 y 19.
+
+# Ejemplo: Cálculo de la tasa de ocupación por provincia
+
+Utilizando la variable de trabajo `RP17TRAB` contenida en la entidad de `PERSONA` se
+calcula la tabla correspondiente.
+
+```{r}
+Tabla4 <- redatam.query(PAN, 
+                           "
+                           freq PROVIN.PROVNOMB 
+                           by PERSONA.RP17TRAB
+                           "
+                           )
+
+head(Tabla4)
+cbind(
+  unique(Tabla4$RP17TRAB2_value),
+  unique(Tabla4$RP17TRAB2_label))
+```
+
+De dicha tabla es posible identificar mediante `_label` aquellas etiquetas `_value` que
+corresponden a ocupados y desocupados. Con dicha informacion se generan nuevas columnas
+para identificar mediante variables dummys a la poblacion ocupada y desocupada, se
+renombra ademas la etiqueta de provincia.
+
+```{r}
+Tabla5 <- Tabla4 %>% 
+  transmute(
+    provin = PROVNOMB1_value,
+    ocupados = ifelse(
+      RP17TRAB2_value %in% c(1110,1120),
+      1,
+      0),
+    desocupados = ifelse(
+      RP17TRAB2_value %in% c(1211:1224),
+      1,
+      0),
+    value
+    )
+
+head(Tabla5)
+```
+
+Con dichas nuevas columnas podemos agrupar la data para sumar la columna `value` que
+corresponde al conteo de los individuos en cada categoria.
+
+```{r}
+Tabla6 <- Tabla5 %>% 
+  group_by(provin, ocupados, desocupados) %>%
+  summarise(value = sum(value)) %>% 
+  as.data.frame()
+
+head(Tabla6)
+```
+
+Note que al ser categorias disjuntas, la variable ocupado y desocupados no deben tomar el
+valor 1 de manera simultanea. Esto es posible comprobarlo en la siguiente sintaxis.
+
+```{r}
+Tabla6 %>% 
+  filter(ocupados == 1, desocupados == 1)
+```
+
+Utilizando la función `pivot_wider` de `tidyverse` pasamos las filas correspondientes a
+columnas de acuerdo a la llave `value` para realizar los conteos correspondientes.
+
+```{r}
+Tabla7 <- pivot_wider(Tabla6, 
+                      names_from = c("ocupados", "desocupados"),
+                      values_from = value,
+                      names_prefix = c("ocupados")) %>%
+  as.data.frame()
+head(Tabla7)
+```
+
+Finalmente podemos calcular la tasa de ocupación por provincia ponderando las respectivas
+columnas de la tabla calculada anteriormente donde el primer dígito corresponde a 1 si
+está ocupado y el segundo dígito a 1 si está desocupado.
+
+```{r}
+Consulta = Tabla7 %>% 
+  transmute(provin,
+            tasa_desocupacion =
+              ocupados1_0/sum(ocupados0_1 + ocupados1_0 ))
+
+head(Consulta)
+```
